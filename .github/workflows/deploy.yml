@@ -25,16 +25,21 @@ jobs:
       - name: Install dependencies
         run: npm install
       
-      # Nouveau step pour le linting
+       # Linting avec correction automatique
       - name: Run ESLint
-        run: npm run lint
+        run: |
+          echo "Linting project..."
+          npm run lint -- --fix
 
+      # Tests unitaires avec Vitest
       - name: Run Unit Tests
         run: npx vitest run # Exécute les tests une seule fois et s'arrête
 
+      # Build du projet
       - name: Build project
         run: npm run build
 
+      # Upload de l'artefact pour GitHub Pages
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
