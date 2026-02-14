@@ -1,3 +1,3 @@
 export default {
-  base: '/convertisseur-js-tests/'
+  base: '/convertisseur-js-linting-tests/'
 }
