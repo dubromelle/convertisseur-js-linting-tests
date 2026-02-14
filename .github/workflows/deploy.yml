@@ -39,7 +39,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # Upload de l'artefact pour GitHub Pages
+      # Upload de l'artefact pour GitHub Pages (ici le site statique)
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:

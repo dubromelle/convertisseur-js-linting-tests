@@ -7,4 +7,4 @@ test('0°C doit donner 32°F', () => {
 
 test('100°C doit donner 212°F', () => {
   expect(celsiusToFahrenheit(100)).toBe(212);
-});
+})
