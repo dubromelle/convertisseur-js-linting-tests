@@ -24,6 +24,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+      
+      # Nouveau step pour le linting
+      - name: Run ESLint
+        run: npm run lint
 
       - name: Run Unit Tests
         run: npx vitest run # Exécute les tests une seule fois et s'arrête

@@ -1,5 +1,5 @@
-import './style.css'
-import { celsiusToFahrenheit } from './convertir'
+import './style.css';
+import { celsiusToFahrenheit } from './convertir';
 
 // --- Logique d'interface (DOM) ---
 const celsiusInput = document.querySelector('#celsius');
@@ -13,7 +13,7 @@ const handleConversion = () => {
     if (!isNaN(fahrenheit)) {
         resultDiv.innerText = `${value}°C est égal à ${fahrenheit.toFixed(2)}°F`;
     } else {
-        resultDiv.innerText = "Veuillez entrer un nombre valide.";
+        resultDiv.innerText = "Veuillez entrer un nombre valide."
     }
 };
 
